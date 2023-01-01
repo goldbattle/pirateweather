@@ -59,6 +59,9 @@ if not os.path.exists(download_path + '/' + prod_B + '/' + fDate):
 if not os.path.exists(download_path + '/' + prod_B + '/' + fDate + '/' + runTime):
     os.makedirs(download_path + '/' + prod_B + '/' + fDate + '/' + runTime)
 
+if not os.path.exists(temp_path):
+    os.makedirs(temp_path)
+
 # Merge paths
 download_path_CK     = download_path + '/' + prod_A + '/' + fDate + '/' + runTime + '/' + 'out_' + prod_A + '_chunked.nc'
 download_path_CK_B   = download_path + '/' + prod_B + '/' + fDate + '/' + runTime + '/' + 'out_' + prod_B + '_chunked.nc'
